@@ -1,0 +1,65 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.app {
+  background: white;
+  padding: 30px;
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #1e40af;
+  color: white;
+  cursor: pointer;
+}
+
+.summary {
+  margin-top: 20px;
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.transaction {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.income {
+  background: #dcfce7;
+}
+
+.expense {
+  background: #fee2e2;
+}

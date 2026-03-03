@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ExpenseLedger</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <h1>ExpenseLedger</h1>
+      <p>Track your expenses with ease.</p>
+
+      <div class="form">
+        <input id="description" placeholder="Description" />
+        <input id="amount" placeholder="Amount" type="number" />
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button onclick="addTransaction()">Add Expense</button>
+      </div>
+
+      <div class="summary">
+        <p>Total Income : <span id="income">0</span></p>
+        <p>Total Expenses : <span id="expense">0</span></p>
+        <p>Net Balance : <span id="balance">0</span></p>
+      </div>
+
+      <div id="transactions"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
